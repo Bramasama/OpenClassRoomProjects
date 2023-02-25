@@ -12,8 +12,7 @@
 
 html {
   height: 100%;
-
-
+  scroll-behavior: smooth;
 }
 
 * {
@@ -29,6 +28,7 @@ body {
   width: 100%;
 
   font-size: 14px;
+  scroll-behavior: smooth;
 
   /* min-height: 100%; */
 }
@@ -437,6 +437,7 @@ p {
 .popular-item li {
   display: flex;
   column-gap: 10px;
+  cursor: pointer;
 }
 
 .popular-item {
@@ -606,6 +607,16 @@ footer {
 
 @media (min-width:768px) and (max-width: 991px) {
 
+
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 108%;
+    /* font-size: 14px; */
+    /* min-height: 100%; */
+}
   .nav-header {
     display: flex;
     flex-direction: row;
@@ -646,7 +657,7 @@ footer {
 
   .info {
     display: flex;
-    margin-right: -138px;
+    /* margin-right: -138px; */
     flex-basis: 100%;
     align-items: center;
     justify-content: flex-start;
@@ -660,6 +671,12 @@ footer {
     align-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
+  }
+
+  .activities-header{
+    padding: 4px 4px 0 45px;
+    display: flex;
+    flex-direction: row;
   }
 
   .accommodation-list {
@@ -755,7 +772,6 @@ footer {
     margin: 0px !important;
   }
 
-  body {}
 
   .nav {
     font-size: 19px;
@@ -772,6 +788,11 @@ footer {
     align-items: center;
   }
 
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
 
   .nav-header {
     display: flex;
@@ -780,6 +801,7 @@ footer {
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 18px 0px 0 0;
   }
 
 
@@ -805,7 +827,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 119%;
+    width: 100%;
     flex-wrap: nowrap;
 
   }

@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+:root {
+   --primary: #9356DC;
+   --primary-btn: hsl(267, 52%, 62%);
+   --secondary: #FF79DA;
+   --tertiary: #99E2D0;
+   --logo-titles-font:font-family: 'Shrikhand', cursive;
+   --text-font:font-family: 'Roboto', sans-serif;
+   --background-map: #e3e2e2;
+   --background: #f2f2f2;
+   --background-footer: #414040;
+   --footer-letter:#f7f1f1;
+   --letter:#000;
+   --second-letter:#464646;
+
+} 
+
+body {
+margin: 0;
+padding: 0;
+display:block;
+font-family:'Roboto', sans-serif ;
+}
+
+.logo {
+   width: 100%;
+   height: 60px;
+   margin: 0;
+   background-color: var(--background);
+   position: relative;
+   box-shadow:0 0 5px rgb(28 0 0); 
+}
+
+.logo > img {
+   display: block;
+   width: 24vh;
+   margin: 0 auto;
+   padding: 1em 0 0 0;
+
+}
+
+.map {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: var(--background-map);
+   color: var(--letter);
+   padding: 0.5vh;
+}
+
+.map p {
+   font-weight: 500;
+   margin: 10px;
+   color: var(--second-letter);
+}
+
+.map .fas {
+   line-height: 2.5em;
+   color: var(--second-letter);
+   padding: 0px 13px 0 0px;
+}
+
+.menu {
+   background-color: var(--background);
+   width: 100%;
+   height: 200px;
+   padding: 0 0 20px 0;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu p {
+   
+   margin: 0px 0px 29px 0;
+
+}
+
+.menu span {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.btn {
+   background: #9356dc;
+   background-image: linear-gradient(to left, #9356dc, #ff79da);
+   border-radius: 28px;
+   font-family:'Roboto', sans-serif ;
+   color: #ffffff;
+   font-size: 16px;
+   padding: 14px 20px 14px 20px;
+   text-decoration: none;
+   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+   border: none;
+ }
+ 
+ .btn:hover {
+   background: #FF79DA;
+   background-image: linear-gradient(to right, #FF79DA, #9356DC);
+   text-decoration: none;
+ }
+
+ .instructions-section{
+   
+   padding: 1px 0px 50px 0;
+
+ }
+
+ .instructions-section h2 {
+   
+   padding: 11px 0px 0px 13px;
+
+ }
+
+
+.instructions {
+   background-color: white;
+   display: flex;
+   gap: 18px;
+   flex-direction: column;
+   align-items: center;
+}
+
+.instruction {
+   padding: 10px;
+   border-radius: 26px;
+   background-color: var(--background);
+   width: 19em;
+   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+
+.numbered1:before {
+   content: "1";
+   display: inline-block;
+   border-radius: 50%;
+   border: 1px solid ;
+   text-align: center;
+   width: 1.5em;
+   margin-right: 0.5em;
+   /* font-weight: bold; */
+   background-color: #9356DC;
+   color: white;
+   position: absolute;
+   top: 51.5vh;
+   left: 2vh;
+ }
+.numbered2:before {
+   content: "2";
+   display: inline-block;
+   border-radius: 50%;
+   border: 1px solid ;
+   text-align: center;
+   width: 1.5em;
+   margin-right: 0.5em;
+   /* font-weight: bold; */
+   background-color: #9356DC;
+   color: white;
+   position: absolute;
+   top: 62vh;
+   left: 2vh;
+ }
+.numbered3:before {
+   content: "3";
+   display: inline-block;
+   border-radius: 50%;
+   border: 1px solid ;
+   text-align: center;
+   width: 1.5em;
+   margin-right: 0.5em;
+   /* font-weight: bold; */
+   background-color: #9356DC;
+   color: white;
+   position: absolute;
+   top: 73vh;
+   left: 2vh;
+ }
+ 
+ .instruction p {
+   padding-left: 20px;
+ }
+
+.menu-card {
+   background-color: var(--background);
+   width: 100%;
+   padding: 0 0 0 0;
+}
+
+.menu-card-contain {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+
+.card {
+   width: 92vw;
+   border-radius: 15px 15px 15px 15px;
+   overflow: hidden;
+   background-color: #ffffff;
+   box-shadow: rgb(0 0 0 / 55%) 0px 4px 12px;
+}
+
+.card img {
+   width: 100%;
+   height: 24vh;
+   display: block;
+   object-fit: cover;
+}
+
+.card h4 {
+   font-size: 16px;
+   line-height: 1.5;
+   margin: 0;
+   color: var(--letter);
+   padding: 10px 0 0 11px;
+}
+.card p {
+   font-size: 17px;
+   line-height: 1.5;
+   color: var(--second-letter);
+   margin: 0px 0px 0 9px;
+   padding: 0px 0px 11px 3px;
+}
+
+.footer-menu{
+   width: 100%;
+   background-color: var(--background-footer);
+   height: 200px;
+   margin: 50px 0 0 0;
+   
+}
+
+.footer-menu h4 {
+   font-family: 'Shrikhand', cursive;
+   color: var(--footer-letter);
+   font-weight: 200;
+   padding: 21px 0px 0px 20px;
+}
+
+.footer-menu-details .fas{
+   color: var(--footer-letter);
+}

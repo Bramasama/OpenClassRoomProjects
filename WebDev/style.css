@@ -3,11 +3,10 @@
 :root {
 
   --blue: #0065FC;
-  --light-blue: #b4cff6;
-  --dark-gray: #f2f2f2;
+  --light-blue: #DEEBFF;
   --background: #f2f2f2;
-
-
+  --dark-gray: #f2f2f2;
+  
 }
 
 html {
@@ -22,15 +21,12 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
-
   display: flex;
   flex-direction: column;
   width: 100%;
-
   font-size: 14px;
   scroll-behavior: smooth;
 
-  /* min-height: 100%; */
 }
 
 /* Nav */
@@ -60,8 +56,8 @@ body {
   text-decoration: none;
   padding-top: 35px;
   padding: 26px;
-  
- 
+
+
 }
 
 .nav-a:hover {
@@ -72,12 +68,6 @@ body {
 .line {
   display: none;
 }
-
-
-
-
-
-
 
 /* Nav End */
 
@@ -326,9 +316,6 @@ p {
   color: var(--blue);
 }
 
-
-
-
 .details p {
   font-size: 12px;
 }
@@ -341,7 +328,6 @@ p {
 
 
 /* Image */
-
 
 .image-list {
   width: 100%;
@@ -373,14 +359,10 @@ p {
   border-top-right-radius: 20px;
 }
 
-
 /* Image End */
 
 
-
-
 /* Popular */
-
 
 .popular-item .details {
   position: relative;
@@ -455,17 +437,11 @@ p {
   color: var(--dark-gray);
 }
 
-
-
-
-
 /* Popular End */
 
 
 
 /* Activities */
-
-
 
 .activities-section {
   display: flex;
@@ -558,8 +534,6 @@ p {
   padding-left: 15px;
 }
 
-
-
 /* Activities End*/
 
 /* Footer */
@@ -572,7 +546,6 @@ footer {
   flex-wrap: wrap;
   background-color: #80808017
 }
-
 
 .footer-heading {
   font-size: 14px;
@@ -602,7 +575,6 @@ footer {
 
 /* Footer End */
 
-
 /* tablet  */
 
 @media (min-width:768px) and (max-width: 991px) {
@@ -616,13 +588,14 @@ footer {
     width: 108%;
     /* font-size: 14px; */
     /* min-height: 100%; */
-}
+  }
+
   .nav-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
   .line {
     display: none;
@@ -631,8 +604,8 @@ footer {
   .nav-a:hover {
     color: var(--blue);
     border-top: #0065FC solid 3px;
-    
-    
+
+
   }
 
   .search-header {
@@ -673,7 +646,7 @@ footer {
     flex-direction: column;
   }
 
-  .activities-header{
+  .activities-header {
     padding: 4px 4px 0 45px;
     display: flex;
     flex-direction: row;
@@ -788,7 +761,7 @@ footer {
     align-items: center;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
